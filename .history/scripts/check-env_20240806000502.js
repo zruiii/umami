@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 require('dotenv').config();
 
-console.log(process.env);
 function checkMissing(vars) {
   const missing = vars.reduce((arr, key) => {
     if (!process.env[key]) {
